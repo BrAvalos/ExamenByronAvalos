@@ -8,6 +8,6 @@ import ec.edu.espe.oficina.model.Edificio;
 import ec.edu.espe.oficina.model.EdificioPK;
 
 public interface EdificioRepository  extends JpaRepository<Edificio, EdificioPK>{
-        List<Edificio> findByCodigoSedeOrderBySuperficieDesc(String sedePattern);
+        List<Edificio> findByPkCodigoSedeOrderBySuperficieDesc(String sedePattern);
 
 }
