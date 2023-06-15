@@ -20,7 +20,7 @@ public class EdificioService {
     }
 
     public List<Edificio> listBySedeOrderBySuperficie(String codigoSede){
-        return this.edificioRepository.findByCodigoSedeOrderBySuperficieDesc(codigoSede);
+        return this.edificioRepository.findByPkCodigoSedeOrderBySuperficieDesc(codigoSede);
     }
 
     @Transactional
